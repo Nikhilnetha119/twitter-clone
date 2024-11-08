@@ -1,0 +1,90 @@
+/* src/components/RightSidebar.css */
+
+.right-sidebar {
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    padding: 20px;
+    background-color: #000000;
+  }
+ 
+  .who-to-follow h3, .trending-now h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+  }
+  
+  .who-to-follow, .trending-now {
+    margin-bottom: 20px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+  }
+  .trend-topic, .tweet-count {
+    color: white;
+  }
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .right-sidebar {
+      max-width: 250px;
+      padding: 15px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .right-sidebar {
+      display: none; /* Hide on smaller screens for more space */
+    }
+  }
+  
+  .user-suggestion,
+  .trend-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 1px solid #e1e8ed;
+  }
+  
+  .user-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .user-suggestion:first-child, .trend-item:first-child {
+    border-top: none;
+  }
+
+  .display-name {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .username {
+    color: #657786;
+    font-size: 14px;
+  }
+  
+  .follow-btn {
+    background-color: #1da1f2;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .trend-topic {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .tweet-count {
+    color: #657786;
+    font-size: 14px;
+  }

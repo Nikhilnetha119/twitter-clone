@@ -1,0 +1,82 @@
+/* src/components/profile.css */
+
+.profile {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* border-radius: 8px; */
+    background-color: black;
+    border-right: 1px solid #ddd;
+}
+
+.profile-header {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile-username {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.profile-bio {
+    font-size: 14px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.profile-stats {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.profile-tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-tabs button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 3px solid transparent;
+}
+
+.profile-tabs .active {
+    border-bottom: 3px solid #1da1f2;
+    color: #1da1f2;
+    font-weight: bold;
+}
+
+.profile-content {
+    padding: 20px 0;
+}
+
+.user-tweets {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile-error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}

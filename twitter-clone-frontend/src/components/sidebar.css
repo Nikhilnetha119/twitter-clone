@@ -1,0 +1,56 @@
+/* src/components/sidebar.css */
+
+.sidebar {
+    width: 200px;
+    height: 500vh;
+    background-color: black;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.sidebar-link {
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    transition: background-color 0.2s;
+}
+
+.sidebar-link:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+    color: #1da1f2;
+}
+
+.sidebar-link i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+/* Hide text labels and reduce sidebar width on small screens */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+        padding: 10px;
+
+    }
+
+    .sidebar-link {
+        justify-content: center;
+        font-size: 0; /* Hide text label */
+    }
+
+    .sidebar-link i {
+        font-size: 24px;
+        margin-right: 0;
+    }
+}

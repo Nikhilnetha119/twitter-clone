@@ -1,0 +1,23 @@
+/* src/App.css */
+
+.app {
+  display: flex;
+  height: 500vh;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.content {
+  
+  margin-left: 250px;
+}
+
+/* For smaller screens, make the sidebar collapse and content take full width */
+@media (max-width: 768px) {
+
+
+  .content {
+    margin-left: 100px;
+    
+  }
+}
